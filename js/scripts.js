@@ -16,9 +16,7 @@ $(document).ready(function() {
     } else if (scrollTop < 100) {
       $('#global-nav').removeClass('scrolled-nav');
     }
-
   });
-
 });
 
 $(document).ready(function() {
@@ -26,11 +24,19 @@ $(document).ready(function() {
   $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
 
-var map, infoWindow;
+var map, infoWindow, marker, position;
      function initMap() {
        map = new google.maps.Map(document.getElementById('map'), {
          center: {lat: -1.28333, lng:  36.81667},
          zoom: 6
+
+       });
+       //This will be for placing the marker on the specified place on a marker.
+       var center = {lat: -1.28333, lng:  36.81667};
+       marker = new google.maps.Marker({
+         position: center,
+         map: map,
+         title: 'Pixie Dust'
        });
        infoWindow = new google.maps.InfoWindow;
 
@@ -43,7 +49,7 @@ var map, infoWindow;
            };
 
            infoWindow.setPosition(pos);
-           infoWindow.setContent('Location found.');
+           infoWindow.setContent('You are Here.');
            infoWindow.open(map);
            map.setCenter(pos);
          }, function() {
