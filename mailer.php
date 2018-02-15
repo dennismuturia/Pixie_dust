@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] =="POST") {
   }
   //set the recipient email address.
   //FIXME: Update this to the desired email address.
-  $recipient = "dmuturia2922@gmail.com";
+  $recipient = "monique63@gmail.com";
 
   //Subject of the email.
   $subject = "Quote Request from $name";
