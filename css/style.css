@@ -46,8 +46,8 @@ input{
   font-size: 5em;
 }
 #map{
-  height: 400px
-  width:100%;
+  height: 400px;
+  width: 100%;
 
 }
 .man{
@@ -323,7 +323,14 @@ padding-right: 10%;
   font-weight: bold;
 }
 .head{
+  font-size: 3.0em;
+  color: #0077B5;
+  font-weight: bold;
+}
+.head1{
   font-size: 4.0em;
+  color: #0077B5;
+  font-weight: bold;
 }
 .carousel-caption {
   top: 30%;
