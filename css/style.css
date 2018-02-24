@@ -83,7 +83,7 @@ padding-right: 10%;
   width: 100%;
   background-color: #000;
     -webkit-transition: height .5s, line-height .5s; /* Safari */
-    transition: all height .5s, line-height .5s ;
+    transition: all-height .5s, line-height .5s ;
 }
 .site-title {
   display: inline-block;
@@ -140,7 +140,7 @@ padding-right: 10%;
   width: 30px;
   height: 20px;
   position: relative;
-  margin: 0px;
+  margin: 0 auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -183,7 +183,7 @@ padding-right: 10%;
 }
 
 .animated-icon1 span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .animated-icon1 span:nth-child(2) {
@@ -218,7 +218,7 @@ padding-right: 10%;
 /* Icon 3*/
 
 .animated-icon3 span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .animated-icon3 span:nth-child(2), .animated-icon3 span:nth-child(3) {
@@ -231,7 +231,7 @@ padding-right: 10%;
 
 .animated-icon3.open span:nth-child(1) {
   top: 11px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
@@ -251,14 +251,14 @@ padding-right: 10%;
 
 .animated-icon3.open span:nth-child(4) {
   top: 11px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
 /* Icon 4 */
 
 .animated-icon4 span:nth-child(1) {
-  top: 0px;
+  top: 0;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -286,12 +286,12 @@ padding-right: 10%;
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 0px;
+  top: 0;
   left: 8px;
 }
 
 .animated-icon4.open span:nth-child(2) {
-  width: 0%;
+  width: 0;
   opacity: 0;
 }
 
@@ -357,7 +357,7 @@ footer{
   text-align: center;
 }
 footer a{
-  color: #bfffff;
+
   color: white;
 }
 footer a:hover{
@@ -368,9 +368,7 @@ footer a:hover{
   background: #00aeef;
   padding: 2em;
 }
-.footer-top{
-  background-image: url();
-}
+
 .footer-middle{
    background: #3d6277;
   padding-top: 2em;
@@ -401,4 +399,5 @@ footer a:hover{
  background: white;
   color: black;
 }
+
 /*******************************pixiedust form*****************************************/
