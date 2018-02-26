@@ -20,10 +20,31 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  var $nav = $("#global-nav ");
+  var $nav = $("#global-nav");
   $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
 
+//This is for theother navbar supportedcontent23
+$(document).ready(function() {
+    var scrollTop = 0;
+    $(window).scroll(function() {
+        scrollTop = $(window).scrollTop();
+        $('.counter').html(scrollTop);
+
+        if (scrollTop >= 100) {
+            $('#global-nav1').addClass('scrolled-nav');
+        } else if (scrollTop < 100) {
+            $('#global-nav1').removeClass('scrolled-nav');
+        }
+    });
+});
+
+$(document).ready(function() {
+    var $nav = $("#global-nav1");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+});
+
+//This is for the map marker
 var map, infoWindow, marker, position;
      function initMap() {
        map = new google.maps.Map(document.getElementById('map'), {
@@ -49,7 +70,7 @@ var map, infoWindow, marker, position;
            };
 
            infoWindow.setPosition(pos);
-           infoWindow.setContent('You are Here.');
+           infoWindow.setContent('Your location');
            infoWindow.open(map);
            map.setCenter(pos);
          }, function() {
